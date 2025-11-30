@@ -14,10 +14,11 @@
  
 </head>
 <body>
-  <!-- Header Section -->
+
+  <!-- Header -->
   <header>
     <div class="logo">
-      <img src="logo.png" alt="Veterinary Doctor Home Visit — Hyderabad">
+      <img src="vettypet.png" alt="Veterinary Doctor Home Visit Hyderabad">
     </div>
     <nav>
       <ul>
@@ -28,48 +29,48 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section id="home" class="hero">
     <div class="hero-content">
-      <h1>Welcome to Vet Home visit</h1>
+      <h1>Welcome to Vet Home Visit</h1>
       <p>Your trusted partner in pet care.</p>
       <a href="#contact" class="cta-btn">Book an Appointment</a>
     </div>
   </section>
 
-  <!-- Services Section -->
+  <!-- Services -->
   <section id="services" class="services">
     <h2>Our Services</h2>
+
     <div class="service-card">
       <h3>Online Vet Consult</h3>
-      <p>Expert advice from the comfort of your home.</p>
+      <p>Expert advice right from your home.</p>
     </div>
-<a href="#bookingModal" onclick="openModal()">
 
-    <div class="service-card link">
+    <div class="service-card link" onclick="openModal()">
       <h3>Home Visit</h3>
-      <p>Professional care at your doorstep in Hyderabad.</p>
+      <p>Professional care delivered at your doorstep.</p>
     </div>
-    </a>
+
     <div class="service-card">
       <h3>Pet Grooming</h3>
-      <p>Comprehensive grooming services for your pets.</p>
+      <p>Full grooming services <br> for pets.</p>
     </div>
-   
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <p>For appointments, reach out via WhatsApp.</p>
-    <a href="https://wa.me/9398509399" class="whatsapp-btn">Chat on WhatsApp</a>
+    <p>For appointments, reach out via WhatsApp.</p><br>
+    <a href="https://wa.me/918639479217" class="whatsapp-btn">Chat on WhatsApp</a>
   </section>
-<!-- Booking Modal -->
-<div class="modal" id="bookingModal" style="display:none;">
+
+  <!-- Booking Modal -->
+  <div class="modal" id="bookingModal">
     <div class="modal-content">
       <span class="close-btn" onclick="closeModal()">&times;</span>
       <h2>Book a Home Visit</h2>
-      <form id="bookingForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <form id="bookingForm">
 
         <input type="text" id="name" placeholder="Your Name" required>
         <input type="email" id="email" placeholder="Email Address" required>
@@ -77,30 +78,17 @@
         <input type="text" id="reason" placeholder="Reason for Visit" required>
         <input type="datetime-local" id="datetime" required>
         <button type="submit">Submit</button>
+
       </form>
     </div>
   </div>
-  
+
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Vetty Pet Clinic. All rights reserved.</p>
+    <p> 2025 Vetty Pet Clinic. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "VeterinaryCare",
-  "name": "Lyka Pet Clinics",
-  "url": "https://yourdomain.com",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Hyderabad",
-    "addressCountry": "India"
-  },
-  "openingHours": "Mo-Su 09:00-20:00"
-}
-</script>
 
 </body>
 </html>
